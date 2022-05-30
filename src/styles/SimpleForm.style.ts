@@ -32,4 +32,8 @@ export const StyledButton = styled.input`
 	border-radius: 4px;
 	outline: none;
 	margin-top: 4px;
+
+	&:focus {
+		background-color: #b3b4c2;
+	}
 `;

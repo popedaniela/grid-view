@@ -8,4 +8,8 @@ export const StyledButton = styled.button`
 	&.selected {
 		background-color: #d3d3d3;
 	}
+
+	&:focus {
+		background-color: #b3b4c2;
+	}
 `;
