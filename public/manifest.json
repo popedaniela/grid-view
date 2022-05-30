@@ -1,0 +1,8 @@
+{
+  "short_name": "Grid View Project",
+  "name": "Grid View Project",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
