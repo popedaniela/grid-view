@@ -1,7 +1,7 @@
 import React, {FC}  from 'react'
 import { StyledColumn, StyledContainer, StyledRow } from '../styles/DataGrid.style';
 
-interface Props {
+interface DataGridProps {
 	data: Array<{
 		title: string,
 		description: string,
@@ -9,7 +9,7 @@ interface Props {
 	}>,
 }
 
-const DataGrid:FC <Props> = ({data}) => {
+const DataGrid:FC <DataGridProps> = ({data}) => {
 	return (
 		<StyledContainer>
 			<StyledRow isHeader={true}>

@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import DataGrid from './DataGrid';
 import Pagination from './Pagination';
 import SearchError from './SearchError';
+import SimpleForm from './SimpleForm';
 import SearchInput from './SearchInput';
 import jsonData from '../data/data.json';
 
@@ -32,6 +33,10 @@ const App:FC = () => {
 		setFilteredData(data.slice(pageNumber * ITEMS_PAGE, nextPageNumber * ITEMS_PAGE));
 	}
 
+	const handleClickAdd = newItem => {
+		setData(prevState => [...prevState, newItem]);
+	};
+
 	const getNumberPages = useCallback(() => Math.ceil(data.length / ITEMS_PAGE), [data]);
 
 	useEffect(()=> {
@@ -57,6 +62,7 @@ const App:FC = () => {
 					numberOfPages={getNumberPages()}
 				/>
 			</StyledWrapperFilters>
+			<SimpleForm handleClick={handleClickAdd}/>
 			{
 				!!filteredData.length
 					? <DataGrid data={filteredData}/>
