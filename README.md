@@ -1,18 +1,14 @@
 # grid-view
 
-Build a grid view using all the data we’ve provided in a JSON structure below.
+Grid view project that displays the data from the json file.
 You have full creative freedom – so go wild. There’s a catch though!
 
-Try your best to include:
+The project includes:
 
 - Pagination
 - A search function
 - A ‘no results found’ state on search
 - Make it accessible and keyboard friendy
+- A form that allows users to add data to the grid. The data is stored in the state so it will be removed when refresh.
 
-Feeling extra fancy? Want to make a lasting impression? Bored and hungry for a challenge? Then go ahead and create your own tile builder using a simple form.
-Inputs could include label, description, and image.
-
-Show us what you got!
-
-Please make sure your solution is accessible online
+### [See the app in action](https://gridviewproject.netlify.app/)
